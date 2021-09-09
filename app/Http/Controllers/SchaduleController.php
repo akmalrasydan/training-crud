@@ -43,7 +43,7 @@ class SchaduleController extends Controller
     public function store(Request $request)// Insert create form
     {
 
-        $request->validate([
+        $request->validate([ // <-query untuk required 
             'title' => 'required|min:2',
             'description' => 'required|min:5',
         ],[
