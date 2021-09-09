@@ -42,7 +42,16 @@ class SchaduleController extends Controller
     }
     public function store(Request $request)// Insert create form
     {
-        //dd($request ->all());
+
+        $request->validate([
+            'title' => 'required|min:2',
+            'description' => 'required|min:5',
+        ],[
+            'title.required' => 'Wajib isi tajuk',
+            'description.required' => 'Wajib isi description',
+            'title.min' => 'Sila isi melebihi 1'
+        ]);
+        
         //store all input to table
         $schadule = new Schadule();
         $schadule->title = $request->title;
