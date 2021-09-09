@@ -23,7 +23,7 @@
                     </div>
                     <ul class="navbar-nav mr-auto">
                         <li class = "nav-item">
-                            <a href="{{route('schadule:create')}}" class="btn btn-warning">Create</a>
+                            <a href="{{route('schadule:create')}}" class="btn btn-warning">Tambah</a>
                         </li>  
                     </ul>
                 </div>
