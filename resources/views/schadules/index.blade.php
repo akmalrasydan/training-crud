@@ -16,7 +16,7 @@
                             <div class ="input-group">
                                 <input type="type" class="form-control" name="keyword" value="{{request()->get('keyword')}}"/>
                                 <div class="input-group-append">
-                                    <button class="btn btn-info" type="submit">Search</button>
+                                    <button class="btn btn-info" type="submit">Cari</button>
                                 </div>
                             </div>
                         </form>
